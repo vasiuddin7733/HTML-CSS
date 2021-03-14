@@ -1,0 +1,219 @@
+.white-text{
+    color: hsl(0, 0%, 100%);
+}
+.dg-text{
+    color:  hsl(0, 0%, 55%)
+}
+.very-dg-text{
+    color: hsl(0, 0%, 41%);
+}
+.alata-font{
+    font-family: ‘Alata’, sans-serif;
+}
+.josefin-font{
+    font-family: ‘Josefin Sans’, sans-serif;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.relative{
+    position: relative;
+}
+.titles{
+    font-size: 3rem;
+}
+.bg-blk{
+    background-color: #000;
+}
+.studio{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+/* End Global */
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+body{
+    font-size: 15px;
+    margin: 0;
+}
+/* Header */
+header{
+    background-image: url("images/desktop/image-hero.jpg");
+    padding: 40px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-bars: center;
+}
+#logo{
+    z-index: 10;
+}
+.nav-bar{
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav .nav-bar:last-of-type{
+    padding-right: 0px;;
+}
+.nav-bar:hover  .follow-me-social  {
+    width: 35%;
+}
+.header-box{
+    border: 1px solid hsl(0, 0%, 100%);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 80px 0px;
+}
+.header-box p{
+    margin: 0;
+    font-size: 3.5rem;
+    width: auto
+}
+/* Main */
+section{
+    padding-top: 100px;
+}
+.first-section{
+    display: flex;
+    align-bars: flex-end;
+    justify-content: flex-start;
+    position: relative;
+}
+.first-section p, .section-header p {
+    margin-bottom: 0;
+}
+.first-section p:last-of-type{
+    line-height: 22px;
+}
+.home-container{
+    background: hsl(0, 0%, 100%);
+    padding: 100px 0px 0px 90px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 55%;
+}
+.section-header{
+    display: flex;
+    align-bars: flex-end;
+    justify-content: space-between;
+}
+.default-btn{
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 130px;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid #000;
+    transition: .2s ease-in-out all;
+}
+.creations-container{
+    display: grid;
+    padding: 40px 0px;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    padding-bottom: 100px;
+}
+.creation{
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+.creation img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.image-caption{
+    position: absolute;
+    bottom: 0px;
+    left: 35px;
+    font-size: 1.8rem;
+    width:50%;
+    transition: .2s ease-in-out all;
+}
+/* Footer */
+footer{
+    padding: 25px 0px;
+}
+footer .studio{
+    display: flex;
+    align-bars: flex-start;
+    justify-content: space-between;
+}
+footer .nav-link-container{
+    margin: 15px 0px;
+}
+footer .nav-bar:first-child{
+    padding-left: 0px;
+}
+.footer-logo{
+    width: 150px;
+}
+footer .social-media{
+    text-align: right;
+    margin-bottom: 10px;
+}
+.social-media div {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 5px;
+    cursor: pointer;
+}
+.social-media {
+    width: 80%;
+}
+@media only screen and (max-width: 480px){
+    .creations-container{
+        grid-template-columns: auto;
+    }
+    header{
+        background-image: url(‘./images/desktop/image-hero.jpg’);
+        height: 600px;
+    }
+    .header-box{
+        margin-top: 150px;
+    }
+    section{
+        padding-top: 60px;
+    }
+    .first-section p {
+        margin-top: 20px;
+    }
+    .creations-section{
+        position: relative;
+    }
+    .section-header .default-btn{
+        position: absolute;
+        bottom: 40px;
+    }
+    .section-header{
+        justify-content: center;
+    }
+    footer .studio{
+        flex-direction: column;
+        text-align: center;
+        align-bars: center;
+    }
+    footer .nav-bar{
+        display: block;
+        padding: 5px 0px;
+    }
+    footer .social-media{
+        text-align: center;
+    }
+}
