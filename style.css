@@ -58,7 +58,7 @@ nav .nav-bar:last-of-type{
 .nav-bar:hover  .social-media {
     width: 35%;
 }
-.header-box{
+.box{
     border: 1px solid hsl(0, 0%, 100%);
     padding: 30px;
     display: flex;
@@ -67,7 +67,7 @@ nav .nav-bar:last-of-type{
     width: 50%;
     margin: 80px 0px;
 }
-.header-box p{
+.box p{
     margin: 0;
     font-size: 3.5rem;
     width: auto
