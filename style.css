@@ -1,17 +1,20 @@
+.studio{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+/* End Global */
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
 .white-text{
     color: hsl(0, 0%, 100%);
 }
 .dg-text{
     color:  hsl(0, 0%, 55%)
-}
-.very-dg-text{
-    color: hsl(0, 0%, 41%);
-}
-.alata-font{
-    font-family: ‘Alata’, sans-serif;
-}
-.josefin-font{
-    font-family: ‘Josefin Sans’, sans-serif;
 }
 .uppercase{
     text-transform: uppercase;
@@ -25,18 +28,7 @@
 .bg-blk{
     background-color: #000;
 }
-.studio{
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1300px;
-}
-/* End Global */
-* {
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
+
 body{
     font-size: 15px;
     margin: 0;
@@ -63,7 +55,7 @@ nav{
 nav .nav-bar:last-of-type{
     padding-right: 0px;;
 }
-.nav-bar:hover  .follow-me-social  {
+.nav-bar:hover  .social-media {
     width: 35%;
 }
 .header-box{
@@ -176,44 +168,4 @@ footer .social-media{
 }
 .social-media {
     width: 80%;
-}
-@media only screen and (max-width: 480px){
-    .creations-container{
-        grid-template-columns: auto;
-    }
-    header{
-        background-image: url(‘./images/desktop/image-hero.jpg’);
-        height: 600px;
-    }
-    .header-box{
-        margin-top: 150px;
-    }
-    section{
-        padding-top: 60px;
-    }
-    .first-section p {
-        margin-top: 20px;
-    }
-    .creations-section{
-        position: relative;
-    }
-    .section-header .default-btn{
-        position: absolute;
-        bottom: 40px;
-    }
-    .section-header{
-        justify-content: center;
-    }
-    footer .studio{
-        flex-direction: column;
-        text-align: center;
-        align-bars: center;
-    }
-    footer .nav-bar{
-        display: block;
-        padding: 5px 0px;
-    }
-    footer .social-media{
-        text-align: center;
-    }
 }
